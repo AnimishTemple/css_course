@@ -1,0 +1,20 @@
+
+/* body selector - an element selector */
+body {
+    font-size: 22px;
+}
+/* paragraph selector - an element selector */
+p {
+    color: purple;
+}
+
+/* a class selector, this is the class attribute in html */
+/* overrides the paragraph element selector */
+.gray {
+    color: gray;
+}
+
+/* an id selector, but not good practice using id selectors*/
+#second {
+    font-style: italic;
+}
