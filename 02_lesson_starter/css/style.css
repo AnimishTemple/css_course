@@ -1,11 +1,47 @@
+/* universal selector, this selects everything */
+/* Usually used for a css reset
+* {
+    font-family: monospace;
+} */
+
+
+/* CSS: Cascading Style Sheets, cascading means it works
+like a waterfall as the bottom specificities take control. 
+It works its way down, whatever definition is read last is 
+applied. But the class selectors will override the element
+selectors because it has more specificity. */
+
+/* A potential issue that a class selector being lost in focus
+or forgotten when you're trying to manipulate something with an
+element selector*/
 
 /* body selector - an element selector */
 body {
     font-size: 22px;
 }
+/* The body element is parent to all the other elements.
+So the settings specified there will be inherited by the other 
+elements. But some aspects are not inherited, those are element 
+specific attributes like the border attribute for the body element.
+ */
+
+/* group selector, the comma is crucial */
+h1, h2 {
+    color: blue;
+}
+
 /* paragraph selector - an element selector */
 p {
     color: purple;
+}
+
+p {
+    color: red;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
 }
 
 /* a class selector, this is the class attribute in html */
