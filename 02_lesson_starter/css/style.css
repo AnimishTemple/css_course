@@ -4,6 +4,14 @@
     font-family: monospace;
 } */
 
+/* Inheritance demonstrated */
+html {
+    font-size: 22px;
+}
+
+main {
+    font-family: monospace;
+}
 
 /* CSS: Cascading Style Sheets, cascading means it works
 like a waterfall as the bottom specificities take control. 
@@ -17,7 +25,7 @@ element selector*/
 
 /* body selector - an element selector */
 body {
-    font-size: 22px;
+    font-size: 18px;
 }
 /* The body element is parent to all the other elements.
 So the settings specified there will be inherited by the other 
